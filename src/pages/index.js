@@ -1,7 +1,10 @@
 import React from "react"
+import FrontPage from "src/components/FrontPage"
+import "src/styles/css-reset.css"
+import "src/styles/core.css"
 
 const IndexPage = () => (
-  <h1>My website!</h1>
+  <FrontPage />
 )
 
 export default IndexPage

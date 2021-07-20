@@ -4,6 +4,7 @@ module.exports = {
     title: "Samuel Slade",
   },
   plugins: [
+    "gatsby-plugin-root-import",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
