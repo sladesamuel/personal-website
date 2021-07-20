@@ -6,7 +6,7 @@ SHELL := /bin/bash
 
 .PHONY: build
 build:
-	echo "TODO: Build commands"
+	npm run build
 
 
 
