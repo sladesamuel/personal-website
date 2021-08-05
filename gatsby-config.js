@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Samuel Slade",
+    siteUrl: "https://www.slade.co.uk/",
+    title: "Samuel Slade"
   },
   plugins: [
     "gatsby-plugin-root-import",
@@ -12,8 +12,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
-      },
+        icon: "src/images/icon.png"
+      }
     },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
@@ -22,17 +22,17 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/images/"
       },
-      __key: "images",
+      __key: "images"
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: "./src/pages/"
       },
-      __key: "pages",
-    },
-  ],
-};
+      __key: "pages"
+    }
+  ]
+}
