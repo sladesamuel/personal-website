@@ -9,6 +9,8 @@ const Container = styled.div`
   overflow: hidden;
   border: ${(props) =>
     props.addBorder ? `1px dashed ${props.theme.colors.secondary}` : `none`};
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 `
 
