@@ -4,8 +4,8 @@ import PropTypes from "prop-types"
 
 const Container = styled.div`
   position: relative;
-  max-width: ${(props) => props.width}px;
-  max-height: ${(props) => props.height}px;
+  width: ${(props) => props.width}px;
+  height: ${(props) => props.height}px;
   overflow: hidden;
   border: ${(props) =>
     props.addBorder ? `1px dashed ${props.theme.colors.secondary}` : `none`};

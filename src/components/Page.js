@@ -1,6 +1,11 @@
 import React from "react"
+import styled from "styled-components"
 import "@fontsource/fira-sans/300.css"
 
-const Page = ({ children }) => <>{children}</>
+const Container = styled.div`
+  padding: 1rem;
+`
+
+const Page = ({ children }) => <Container>{children}</Container>
 
 export default Page
