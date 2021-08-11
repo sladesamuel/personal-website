@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
@@ -21,17 +21,30 @@ const Subtitle = styled.p`
   font-size: 1.2rem;
 `
 
-const FrontPage = ({ title, subtitle }) => (
-  <Container>
-    <CircularContainer size="lg">
-      <StaticImage src="../images/personal.jpeg" alt="" />
-    </CircularContainer>
+const FrontPage = ({ title, subtitle }) => {
+  const [showImage, setShowImage] = useState(true)
 
-    <Title>{title}</Title>
+  return (
+    <Container>
+      <CircularContainer size="lg">
+        {showImage && <StaticImage src="../images/personal.jpeg" alt="" />}
+      </CircularContainer>
 
-    <Subtitle>{subtitle}</Subtitle>
-  </Container>
-)
+      <Title>{title}</Title>
+
+      <Subtitle>{subtitle}</Subtitle>
+
+      <button
+        onClick={(e) => {
+          e.preventDefault()
+          setShowImage(!showImage)
+        }}
+      >
+        {`Toggle Image`}
+      </button>
+    </Container>
+  )
+}
 
 FrontPage.propTypes = {
   title: PropTypes.string.isRequired,
