@@ -6,3 +6,8 @@ body {
 body {
   font-family: "Fira Sans", sans-serif;
 }
+
+* {
+  outline: 3px solid blue;
+  outline-offset: -3px;
+}

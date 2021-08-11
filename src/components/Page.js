@@ -1,9 +1,15 @@
 import React from "react"
 import styled from "styled-components"
-import "@fontsource/fira-sans/300.css"
+import GlobalStyles from "src/components/GlobalStyles"
 
 const Container = styled.div``
 
-const Page = ({ children }) => <Container>{children}</Container>
+const Page = ({ children }) => (
+  <Container>
+    <GlobalStyles />
+
+    {children}
+  </Container>
+)
 
 export default Page
