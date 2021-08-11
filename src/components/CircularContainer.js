@@ -12,7 +12,6 @@ const Container = styled.div`
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 3px solid red;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
 `
 

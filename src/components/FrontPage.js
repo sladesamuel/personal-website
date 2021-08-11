@@ -21,30 +21,17 @@ const Subtitle = styled.p`
   font-size: 1.2rem;
 `
 
-const FrontPage = ({ title, subtitle }) => {
-  const [showImage, setShowImage] = useState(true)
+const FrontPage = ({ title, subtitle }) => (
+  <Container>
+    <CircularContainer size="lg">
+      {showImage && <StaticImage src="../images/personal.jpeg" alt="" />}
+    </CircularContainer>
 
-  return (
-    <Container>
-      <CircularContainer size="lg">
-        {showImage && <StaticImage src="../images/personal.jpeg" alt="" />}
-      </CircularContainer>
+    <Title>{title}</Title>
 
-      <Title>{title}</Title>
-
-      <Subtitle>{subtitle}</Subtitle>
-
-      <button
-        onClick={(e) => {
-          e.preventDefault()
-          setShowImage(!showImage)
-        }}
-      >
-        {`Toggle Image`}
-      </button>
-    </Container>
-  )
-}
+    <Subtitle>{subtitle}</Subtitle>
+  </Container>
+)
 
 FrontPage.propTypes = {
   title: PropTypes.string.isRequired,
