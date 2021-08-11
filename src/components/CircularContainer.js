@@ -13,6 +13,8 @@ const Container = styled.div`
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 3px solid red;
+  touch-action: none;
+  -ms-touch-action: none;
 `
 
 function getSize(size) {
