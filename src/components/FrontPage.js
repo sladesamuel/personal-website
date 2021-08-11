@@ -24,7 +24,7 @@ const Subtitle = styled.p`
 const FrontPage = ({ title, subtitle }) => (
   <Container>
     <CircularContainer size="lg">
-      {showImage && <StaticImage src="../images/personal.jpeg" alt="" />}
+      <StaticImage src="../images/personal.jpeg" alt="" />
     </CircularContainer>
 
     <Title>{title}</Title>
