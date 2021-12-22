@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   height: 100vh;
@@ -6,9 +10,3 @@ body {
 body {
   font-family: "Fira Sans", sans-serif;
 }
-
-/* Only use for debug purposes */
-/* * {
-  outline: 3px solid blue;
-  outline-offset: -3px;
-} */
