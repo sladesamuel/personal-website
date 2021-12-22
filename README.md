@@ -10,6 +10,8 @@ If you wish to build and run this project locally, you will need to install the 
 
 1. [NodeJS and npm](https://nodejs.org/en/download/package-manager/)
 
+> You can instead use [Node Version Manager](https://github.com/nvm-sh/nvm) to install/use the required Node version for this project with the commands `nvm install` and `nvm use`.
+
 ## Getting started
 
 In order to build and run the project locally, execute the following commands from the terminal in the root folder.
