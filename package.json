@@ -8,10 +8,10 @@
     "gatsby"
   ],
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider gatsby develop",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build",
-    "serve": "NODE_OPTIONS=--openssl-legacy-provider gatsby serve",
-    "clean": "NODE_OPTIONS=--openssl-legacy-provider gatsby clean"
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@fontsource/fira-sans": "^4.5.0",
