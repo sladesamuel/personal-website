@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.slade.co.uk/",
     title: "Samuel Slade",
-    subtitle: "Software Development Consultant"
+    subtitle: "Senior Architect"
   },
   plugins: [
     "gatsby-plugin-root-import",
