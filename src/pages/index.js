@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Page from "src/components/Page"
-import FrontPage from "src/components/FrontPage"
+import Home from "src/components/Home"
 
 export const query = graphql`
   query {
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Page>
-      <FrontPage title={title} subtitle={subtitle} />
+      <Home title={title} subtitle={subtitle} />
     </Page>
   )
 }
